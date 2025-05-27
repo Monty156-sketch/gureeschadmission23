@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guree D/A KG/Primary Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Guree D/A KG/Primary Student Registration Form</h2>
+    <form action="https://formspree.io/f/mwpogvpq" method="POST" id="studentForm">
+        <label for="name">Student Name *</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender *</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="phone">Telephone No *</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required>
+
+        <label for="Class">Class Options *</label>
+        <select id="programme" name="programme" required>
+            <option value="" disabled selected>Select Class</option>
+            <option value="B1">Basic One </option>
+            <option value="B2">Basic Two</option>
+            <option value="B3">Basic Three</option>
+            <option value="B4">Basic Four</option>
+            <option value="B5">Basic Five</option>
+            <option value="B6">Basic Six</option>
+            <option value="KG 1">Kindergarten One</option>
+            <option value="KG 2">Kindergarten Two</option>
+        </select>
+
+        <label for="Hobby">Hobby Options *</label>
+        <select id="Hobby" name="Hobby" required>
+            <option value="" disabled selected>Select Hobby</option>
+            <option value="Reading">Reading</option>
+            <option value="Culture">Culture</option>
+            <option value="Football">Football</option>
+            <option value="Atlete">Atlete</option>
+        </select>
+
+        <label for="address">Residential Address *</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+
+</body>
+</html>
+
